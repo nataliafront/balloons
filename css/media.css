@@ -1,0 +1,118 @@
+@media screen and (max-width: 1000px) {
+    .card-info {
+        padding-bottom: 20px;
+    }
+
+    .card-item__title {
+        font-size: 16px;
+    }
+
+    .main-game__title {
+        font-size: 58px;
+    }
+
+    .main-game {
+        height: 500px;
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+      .card-item {
+          width: 48%;
+      }
+  }
+
+  @media screen and (max-width: 860px) {
+    .main-game__title {
+        font-size: 45px;
+    }
+
+    .main-game {
+        height: 400px;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .main-sidebar {
+        width: auto;
+        margin-top: 40px;
+        padding: 0 30px;
+    }
+
+    .main-sidebar__list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    .main-wrapper {
+        padding-left: 0;
+    }
+
+    .main-content {
+        padding-left: 30px;
+    }
+
+    .main-sidebar__link {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .main-menu__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .main-game__title {
+        font-size: 35px;
+    }
+
+    .main-game {
+        height: 300px;
+    }
+
+    .main-sidebar__img {
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card-item {
+        width: 100%;
+    }
+
+    .main-sidebar__list {
+        padding-top: 10px;
+    }
+
+    .main-category__title {
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .main-game__title {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .instruction-header {
+        flex-wrap: wrap;
+    }
+
+    .instruction-header__title {
+        font-size: 12px;
+    }
+
+    .footer-copyright {
+        font-size: 13px;
+    }
+}

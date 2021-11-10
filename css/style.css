@@ -1,0 +1,302 @@
+body {
+    font-family: "Ubuntu-Regular";
+}
+
+ul, p {
+    margin: 0;
+}
+
+.header {
+    box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.04);
+}
+
+.main-menu__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.main-menu__item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.main-menu__link {
+    position: relative;
+    display: block;
+    font-family: "Ubuntu-Bold";
+    text-decoration: none;
+    color: #374A59;
+    padding: 30px 0;
+    transition: .3s;
+}
+
+.main-menu__link::after {
+    opacity: 0;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #EF6C00;
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    transition: .3s;
+}
+
+.main-menu__link:hover.main-menu__link::after {
+    opacity: 1;
+}
+
+.main-menu__link:hover {
+    color: #EF6C00;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-left: 150px;
+    padding-top: 64px;
+    padding-bottom: 70px;
+    background-image: url("../images/balloons.svg");
+    background-repeat: no-repeat;
+    background-position: left 50px;
+}
+
+.main-content {
+    max-width: 1044px;
+    padding-right: 30px;
+}
+
+.main-category {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+    padding: 16px 16px 0 16px;
+}
+
+.main-category__title {
+    font-family: "Ubuntu-Bold";
+    font-size: 16px;
+    line-height: 100%;
+    color: #EF6C00;
+}
+
+.main-category__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+
+.main-category__social {
+    display: flex;
+}
+
+.main-category__info {
+    font-family: "Ubuntu-Bold";
+    font-size: 16px;
+    line-height: 100%;
+    color: #374A59;
+    padding-right: 14px;
+}
+
+.main-category__link:not(:last-child) {
+    padding-right: 12px;
+}
+
+.main-category__desc {
+    font-size: 12px;
+    line-height: 140%;
+    color: #374A59;
+    padding-bottom: 17px;
+}
+
+.category-more {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 11px;
+}
+
+.category-more__title {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #007AE9;
+    font-family: "Ubuntu-Bold";
+    padding-right: 10px;
+}
+
+.cards {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-item {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.04), 0px 8px 16px rgba(17, 17, 17, 0.04);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    width: 31.5%;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-item__img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    max-width: 100%;
+}
+
+.card-info {
+    padding: 16px 16px 45px 16px;
+}
+
+.card-item__title {
+    font-size: 18px;
+    line-height: 110%;
+    color: #EF6C00;
+    font-family: "Ubuntu-Bold";
+    padding-bottom: 6px;
+}
+
+.card-item__desc {
+    font-size: 14px;
+    line-height: 140%;
+    color: #374A59;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 17px 16px;
+    margin-top: auto;
+}
+
+.card-complexity {
+    display: flex;
+}
+
+.card-complexity__name {
+    font-family: "Ubuntu-Medium";
+    font-size: 12px;
+    line-height: 14px;
+    color: #6E798C;
+    padding-right: 12px;
+
+}
+
+.card-complexity__color {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #2ECC71;
+}
+
+.card-more__link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #007AE9;
+    font-family: "Ubuntu-Bold";
+}
+
+.main-sidebar {
+    width: 105px;
+    padding: 0 15px 0 0;
+}
+
+.main-sidebar__title {
+    font-family: "Ubuntu-Bold";
+    font-size: 16px;
+    line-height: 100%;
+    color: #374A59;
+    text-align: center;
+}
+
+.main-sidebar__link {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07));
+    border-radius: 16px;
+    margin: 14px auto 0 auto;
+}
+
+.main-sidebar__img {
+    max-width: 100%;
+}
+
+.footer {
+    box-shadow: 0px -8px 16px rgba(17, 17, 17, 0.04);
+}
+
+.container {
+    max-width: 1100px;
+    padding: 12px 15px;
+    margin: 0 auto;
+}
+
+.footer-copyright {
+    font-family: "Ubuntu-Bold";
+    font-size: 16px;
+    line-height: 100%;
+    color: #374A59;
+}
+
+.main-game {
+    margin: 30px 0;
+    height: 757px;
+    background: #BCD1FF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-game__title {
+    font-family: "Ubuntu-Bold";
+    font-size: 72px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.instruction {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.instruction-header {
+    display: flex;
+    padding-bottom: 14px;
+}
+
+.instruction-header__title {
+    font-family: "Ubuntu-Bold";
+    font-size: 16px;
+    line-height: 100%;
+    color: #EF6C00;
+    padding-right: 64px;
+}
+
+.instruction-info {
+    font-size: 12px;
+    line-height: 140%;
+    color: #374A59;
+}
